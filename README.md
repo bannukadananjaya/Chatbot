@@ -1,8 +1,6 @@
 # Chatbot Deployment with Flask and JavaScript
 
 
-![Chatbot Preview](chatbot.png)
-
 This is an e-commerce assistant chatbot designed to enhance the shopping experience on an online clothing store. The chatbot is implemented using JavaScript for the frontend and Flask for the backend. It provides fashion advice, product recommendations, and real-time information about clothing items.
 
 ## Features
