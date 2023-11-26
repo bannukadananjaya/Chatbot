@@ -79,6 +79,64 @@
           "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
           "What did the buffalo say when his son left for college? Bison."
         ]
+      },
+      {
+        "tag":"product_inquiry",
+        "Patterns":[
+          "Can you tell me about [product_name]?",
+          "What are the specifications of [product_name]?",
+          "Do you have [product_name] in stock?"
+        ],
+        "responses":[
+          "Sure, [product_name] comes with [list_of_specifications].",
+          "Yes, we currently have [product_name] in stock.",
+          "The [product_name] features [key_features]."
+        ]
+      },
+      {
+        "tag":"Price Inquiry",
+        "Patterns":[
+          "How much does [product_name] cost?",
+          "What is the price of [product_name]?"
+        ],
+        "responses":[
+          "The price of [product_name] is [price].",
+          "For [product_name], the cost is [price].",
+          "The price range for [product_name] starts at [starting_price]."
+        ]
+      },
+      {
+        "tag": "technical_support",
+        "patterns":[
+          "I'm having trouble with [specific_issue].",
+          "Can you help me troubleshoot [specific_problem]?"
+        ],
+        "responses":[
+          "Sure, I can assist you with [specific_issue]. Have you tried [troubleshooting_step]?",
+          "Let's troubleshoot [specific_problem]. Have you checked [possible_solution]?"
+        ]
+      },
+      {
+        "tag": "order_status",
+        "Patterns":[
+          "Can you check the status of my order?",
+          "Where is my order [order_number]?"
+        ],
+        "responses":[
+          "Sure, let me check the status of order [order_number] for you.",
+          "Your order [order_number] is currently [order_status]. It will be delivered by [expected_delivery_date]."
+        ]
+      },
+      {
+        "tag": "feedback",
+        "patterns":[
+          "I want to provide feedback on my recent purchase.",
+          "How can I leave a review for my order?"
+        ],
+        "responses":[
+          "We appreciate your feedback! You can leave a review on our website or contact our support team for assistance.",
+          "Thank you for your interest in providing feedback. Reviews can be submitted through our website or directly to our support team."
+        ]
       }
     ]
   }
