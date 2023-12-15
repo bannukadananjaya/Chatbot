@@ -16,6 +16,7 @@ with open('intents.json', 'r') as f:
 all_words = []
 tags = []
 xy = []
+
 # loop through each sentence in our intents patterns
 for intent in intents['intents']:
     tag = intent['tag']

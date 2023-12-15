@@ -60,7 +60,7 @@ class Chatbox {
             this.messages.push(msg2);
             this.updateChatText(chatbox)
             textField.value = ''
-
+            chatbox.querySelector('.chatbox__messages').scrollTop = chatbox.querySelector('.chatbox__messages').scrollHeight;
         }).catch((error) => {
             console.error('Error:', error);
             this.updateChatText(chatbox)
@@ -83,6 +83,8 @@ class Chatbox {
 
         const chatmessage = chatbox.querySelector('.chatbox__messages');
         chatmessage.innerHTML = html;
+        // Scroll back to the previous position after updating the content
+        // chatmessage.scrollTop = chatmessage.scrollHeight - previousScrollHeight;
     }
 }
 

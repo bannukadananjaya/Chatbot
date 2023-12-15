@@ -20,9 +20,10 @@ def tokenize(sentence):
 # print(a)
 
 # words = ["organizing","organizes","organizing"]
-# stemmed_wrods = [stem(w) for w in words]
+# stemmed_wrod  s = [stem(w) for w in words]
 # print(words)
 # print(stemmed_wrods)
+
 def stem(word):
     """
     stemming = find the root form of the word

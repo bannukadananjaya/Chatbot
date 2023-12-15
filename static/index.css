@@ -12,16 +12,35 @@ body {
 }
 
 *, html {
-    --primaryGradient: linear-gradient(93.12deg, #581B98 0.52%, #9C1DE7 100%);
-    --secondaryGradient: linear-gradient(268.91deg, #581B98 -2.14%, #9C1DE7 99.69%);
+    --primaryGradient: linear-gradient(93.12deg, #145252 0.52%, #239090 100%);
+    --secondaryGradient: linear-gradient(268.91deg, #145252 -2.14%, #239090 99.69%);
     --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
-    --primary: #581B98;
+    --primary: #145252;
 }
 
-
+.container{
+    position: relative; 
+    /* Replace with your image path */
+    /* background-size: cover; Cover the entire container
+    background-position: center; Center the image*/
+    height: 100vh;  
+    /* 100% of the viewport height */
+    /* You can add additional styling for the container here */
+    /* opacity:0.8; */
+    
+}
+.image{
+    position: absolute;;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-image: url('./images/Computer-Shop-Facebook-Cover-Template.jpg');
+    filter:contrast(0.7) brightness(0.8) saturate(0.9) ;
+}
 .chatbox {
-    border: solid 1px red ;
+    /* border: solid 1px red ; */
     position: absolute;
     /* background: var(--primary); */
      bottom: 30px;
@@ -30,7 +49,7 @@ body {
 
 /* CONTENT IS CLOSE */
 .chatbox__support {
-    border: solid 1px red ;
+    /* border: solid 1px red ; */
     display: flex;
     flex-direction: column;
     background: #eee;
@@ -52,6 +71,7 @@ body {
 /* BUTTON */
 .chatbox__button {
     text-align: right;
+
 }
 
 .send__button {
@@ -62,11 +82,6 @@ body {
     cursor: pointer;
     border-radius: 5px;
 }
-
-/* .send__button:hover {
-    border: white;
-    opacity: 0.3; 
-}*/
 
 /* HEADER */
 .chatbox__header {
@@ -110,6 +125,9 @@ body {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
 }
 
 /* HEADER */
@@ -178,6 +196,7 @@ body {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-top: 20px;
+    
 }
 
 .chatbox__footer input {

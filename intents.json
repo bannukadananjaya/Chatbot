@@ -1,40 +1,614 @@
 {
   "intents": [
     {
-      "tag": "greeting",
+      "tag": "Greeting",
       "patterns": [
+        "Good morning!",
         "Hi",
         "Hey",
         "How are you",
         "Is anyone there?",
-        "Hello",
-        "Good day"
+        "Hello"
       ],
       "responses": [
+        "Morning! Need any help today?",
         "Hey :-)",
-        "Hello, thanks for visiting",
         "Hi there, what can I do for you?",
         "Hi there, how can I help?"
       ]
-    },
+    },  
     {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "tag": "Goodbye",
+      "patterns": [
+        "Thank you",
+        "Thx",
+        "Thank you, goodbye",
+        "Appreciate your help, bye",
+        "Thanks for your assistance, farewell"
+      ],
       "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "You're welcome!",
+        "Thank you! Goodbye!",
+        "You're welcome! Bye!",
+        "No problem, happy to help!",
+        "It was my pleasure! Farewell!"
+      ]
+    },   
+    {
+      "tag": "gaming laptop",
+      "patterns": [
+        "gaming laptops",
+        "Do you have gaming laptops?"
+      ],
+      "responses": [    
+        "Yes, we have gaming laptops optimized for high-performance gaming experiences."
       ]
     },
     {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "tag": "Desktop Information",
+      "patterns": [
+        "What desktop computers do you have?",
+        "Tell me about your desktops",
+        "I need information on desktop computers",
+        "Do you sell desktop PCs",
+        "Pcs", "desktop computers"
+      ],
+      "responses": [
+        "Absolutely! We have various desktop models available. What specific information do you need?",
+        "Our desktop range includes models suited for different purposes. How can I assist you further?",
+        "Certainly! Our product line consists of several desktop computers. What are you interested in?",
+        "Yes, we offer a range of desktop PCs, each designed for specific user needs."
+      ]
     },
     {
-      "tag": "items",
-      "patterns": ["Which items do you have?", "What kinds of items are there?","What do you sell?"],
-      "responses": ["We sell computer systems and related products ","We have desktops, laptops, peripherals, and accessories" ]
+      "tag": "Brands",
+      "patterns": [
+        "Do you have Acer laptops?",
+        "Acer laptops",
+        "Acer",
+        "How about Acer laptops",
+        "What brands of computers do you sell?",
+        "Are Acer computers available?"
+
+      ],
+      "responses": [
+        "We do have Acer computers available in our selection. Models like Acer Aspire 5, Predator Helios 300, and Nitro 5 are in stock. Which model are you looking for?"
+      ]
+    }, 
+
+    {
+      "tag":"Dell",
+      "patterns": [
+        "Do you have dell laptops?",
+        "How about Dell laptops",
+        "dell laptop"
+      ],
+      "reponses":[
+        "Yes, we offer Dell laptops known for their quality. Models like Dell XPS 13, Inspiron 15, and Latitude 7390 are available. Which model are you interested in?"
+      ]
+    },
+    {
+      "tag": "Discounts",
+      "patterns": [
+        "Do you have any discounts on computers?",
+        "Are there any special offers available?",
+        "Do you offer student discounts?",
+        "discount"
+      ],
+      "responses": [
+        "Is there a particular type of computer you're interested in?",
+        "Yes, we offer discounts on various computer models.",
+        "We have special discounts occasionally. Are you a student? We might have offers tailored for students."
+      ]
+    },
+  
+    {
+      "tag": "Price Range",
+      "patterns": [
+        "What's the price range for your computers?",
+        "Are your computers affordable?",
+        "Do you have budget-friendly options?",
+        "Price range"
+      ],
+      "responses": [
+
+        "We have options in various price ranges, catering to different budgets. "
+      ]
+    },
+
+    {
+      "tag": "Slow Performance",
+      "patterns": [
+        "My computer is running slow",
+        "Why is my laptop so slow?",
+        "Performance issues with my PC",
+        "My device is sluggish"
+      ],
+      "responses": [
+        "Sluggishness in a device can be due to multiple factors. Describe the performance problems you're facing.",
+        "Performance issues can be frustrating. Let's troubleshoot together. Share the specific symptoms.",
+        "A slow device might need optimization. Elaborate on the performance problems you're encountering."
+      ]
+    },
+    {
+      "tag": "Software Problem",
+      "patterns": [
+        "I'm having issues with software",
+        "Software problems on my PC",
+        "Application not working correctly"
+      ],
+      "responses": [
+        "Software issues can sometimes be complex. ",
+        "Troubles with applications can vary. Let me know which software you're having trouble with and the specific issue.",
+        "Software-related problems can be resolved. Can you provide more details about the application malfunction?"
+      ]
+    },
+    {
+      "tag": "Specific Laptop Features",
+      "patterns": [
+        "I need laptops with specific features",
+        "What laptops have good battery life?",
+        "Show me laptops with SSD"
+      ],
+      "responses": [
+        "Sure, we have laptops with various features like extended battery life, high-speed SSDs, and more. ",
+        "Battery life, storage options, and other features vary among laptops. Which specific features are you interested in?",
+        "We have laptops equipped with SSDs, excellent battery life, and other features."
+      ]
+    },
+    {
+      "tag": "Dell Inspiron",
+      "patterns": [
+        "Information on Dell Inspiron",
+        "Tell me about Dell Inspiron laptops",
+        "Details on Dell Inspiron series",
+        "Dell Inspiration"
+      ],
+      "responses": [
+        "The Dell Inspiron series offers various models with different specifications. The standard configurations include Intel Core processors, varied RAM options, SSD/HDD storage, and multiple display sizes catering to different user needs."
+      ]
+    },
+    {
+      "tag": "Lenovo ThinkPad",
+      "patterns": [
+        "What can you tell me about Lenovo ThinkPad?",
+        "Details on ThinkPad series",
+        "I'm interested in ThinkPad laptops",
+        "Lenovo Thinkpad",
+        "lenovo"
+      ],
+      "responses": [
+        "Lenovo ThinkPad models are known for their durability, performance, and business-centric features. They often feature Intel Core processors, SSD storage, high-quality displays, and robust build quality suitable for professional use."
+      ]
+    },
+
+    {
+      "tag": "Apple MacBook Pro",
+      "patterns": [
+        "What can you tell me about MacBook Pro?",
+        "Details on MacBook Pro",
+        "I'm interested in MacBook Pro",
+        "MacBook pro",
+        "MacBook"
+      ],
+      "responses": [
+        "The MacBook Pro by Apple offers powerful performance, stunning Retina displays, long-lasting battery life, and the convenience of macOS. It includes high-end processors, ample RAM, fast SSDs, and superior build quality."
+      ]
+    },
+    {
+      "tag": "HP Pavilion Desktop",
+      "patterns": [
+        "Information on HP Pavilion Desktop",
+        "Tell me about HP Pavilion Desktops",
+        "Details on Pavilion Desktop series",
+        "Hp pavilion Desktop"
+      ],
+      "responses": [
+        "The HP Pavilion Desktop series offers reliable computing power for various needs. They come with different processor options, RAM configurations, storage capacities, and sometimes dedicated graphics, catering to different user requirements."
+      ]
+    },
+    {
+      "tag": "Dell XPS Desktop",
+      "patterns": [
+        "What can you tell me about Dell XPS Desktops?",
+        "Details on XPS Desktop series",
+        "I'm interested in Dell XPS Desktop",
+        "Dell"
+      ],
+      "responses": [
+        "Dell XPS Desktops offer high performance and elegant design. They often feature powerful processors, ample RAM, SSD storage, discrete graphics options, and can be customized for various usage scenarios, including gaming or professional work."
+      ]
+    },
+    {
+      "tag": "Apple iMac",
+      "patterns": [
+        "What can you tell me about iMac?",
+        "Details on iMac Desktop",
+        "I'm interested in iMac",
+        "Apple"
+      ],
+      "responses": [
+        "The iMac by Apple is known for its sleek design and powerful performance. It features vibrant displays, fast processors, ample RAM, and SSD storage. It runs on macOS and is suitable for various creative and professional tasks."
+      ]
+    },
+    {
+      "tag": "Asus ROG Desktop",
+      "patterns": [
+        "Information on Asus ROG Desktop",
+        "Tell me about Asus ROG Desktops",
+        "Details on ROG Desktop series"
+      ],
+      "responses": [
+        "Asus ROG Desktops are designed for gaming enthusiasts and power users. They often feature high-end processors, dedicated graphics cards, extensive RAM, SSD/HDD storage, and advanced cooling solutions to handle demanding gaming and content creation tasks."
+      ]
+    },
+    {
+      "tag": "Acer Aspire Desktop",
+      "patterns": [
+        "What can you tell me about Acer Aspire Desktops?",
+        "Details on Aspire Desktop series",
+        "I'm interested in Acer Aspire Desktop"
+      ],
+      "responses": [
+        "Acer Aspire Desktops offer a range of options for everyday computing needs. They typically feature different processor configurations, RAM options, storage choices, and sometimes discrete graphics, suitable for various home and office applications."
+      ]
+    },
+    
+
+    {
+      "tag": "Dell Desktop Price",
+      "patterns": [
+        "How much is the Dell XPS Desktop?",
+        "What's the price of Dell XPS Desktop?",
+        "Dell XPS Desktop price",
+        "Dell Xps"
+      ],
+      "responses": [
+        "The price for the Dell XPS Desktop starts at $999."
+      ]
+    },
+    {
+      "tag": "Lenovo Price",
+      "patterns": [
+        "How much does the Lenovo IdeaCentre cost?",
+        "Lenovo  price",
+        "What is the price of Lenovo IdeaCentre?"
+      ],
+      "responses": [
+        "The price for the Lenovo laptops ranges from $499 to $899 depending on configurations."
+      ]
+    },
+    {
+      "tag": "Apple iMac Price",
+      "patterns": [
+        "What is the cost of the iMac?",
+        "iMac price",
+        "How much for the iMac?"
+      ],
+      "responses": [
+        "The starting price for the Apple iMac is $1299."
+      ]
+    },
+    {
+      "tag": "Asus ROG Strix Laptop Price",
+      "patterns": [
+        "How much is the Asus ROG Strix Laptop?",
+        "What's the price of Asus ROG Strix Laptop?",
+        "Asus ROG Strix Laptop price",
+        "Asus Rog"
+      ],
+      "responses": [
+        "The price for the Asus ROG Strix Laptop starts at $1499."
+      ]
+    },
+    {
+      "tag": "Acer Aspire Laptop Price",
+      "patterns": [
+        "How much does the Acer Aspire cost?",
+        "Acer Aspire price",
+        "What is the price of Acer Aspire?",
+        "acer aspire"
+      ],
+      "responses": [
+        "The starting price for the Acer Aspire Laptop is $599."
+      ]
+    },
+    {
+      "tag": "Tech Specs",
+      "patterns": [
+        "Can I get technical specifications?",
+        "I need details on specifications",
+        "Technical specs"
+      ],
+      "responses": [
+        "Sure, technical specifications typically include processor type, RAM size, storage capacity, graphics card details, display size and resolution, operating system, and other relevant features."
+      ]
+    },
+
+    {
+      "tag": "Return Policy",
+      "patterns": [
+        "What is your return policy?",
+        "Can I return a product?",
+        "Return information",
+        "Return policy"
+      ],
+      "responses": [
+        "Our return policy allows returns within 30 days of purchase with a valid receipt. Items must be in their original condition. Certain exclusions and conditions apply."
+      ]
+    },
+    {
+      "tag": "Used Laptops",
+      "patterns": [
+        "Do you have used laptops?",
+        "What used laptops do you have?",
+        "I'm interested in a used laptop",
+        "used laptops"
+      ],
+      "responses": [
+        "Yes, we have a range of certified used laptops available. They come inspected, refurbished, and offer good value for money. Feel free to ask about specific models or visit our store to check them out."
+      ]
+    },
+
+
+    {
+      "tag": "Benefits of Buying Used Laptops",
+      "patterns": [
+        "What are the benefits of buying a used laptop?",
+        "Advantages of used laptops",
+        "Reasons to choose a used laptop",
+        "Buy used laptop"
+      ],
+      "responses": [
+        "Purchasing a used laptop allows you to get premium features at a lower cost. You can access higher specifications within your budget and often find models with higher-end configurations that might otherwise be out of reach."
+      ]
+    }
+    ,
+
+
+    {
+      "tag": "Warranty",
+      "patterns": [
+        "Do your used desktops come with a warranty?",
+        "Warranty on used desktops",
+        "What about warranties for used desktops?",
+        "warranty"
+      ],
+      "responses": [
+        "Yes, our used desktops come with warranties to guarantee customer satisfaction. The warranties cover specific components and provide peace of mind, ensuring a smooth experience and support for any unforeseen issues."
+      ]
+    }
+    ,
+
+    
+    {
+      "tag": "laptop",
+      "patterns": [
+        "What laptops do you sell?",
+        "Show me laptop options",
+        "Looking for a new laptop",
+        "Are there any laptop deals?",
+        "Do you offer gaming laptops?",
+        "Looking for a lightweight laptop",
+        "What are the latest laptop models?",
+        "Tell me about laptop specifications",
+        "laptop models",
+        "laptop"
+      ],
+      "responses": [
+        "We offer a variety of laptops, including gaming laptops and lightweight models.",
+        "Our laptop selection includes brands like Dell, Lenovo, and Asus."
+      ]
+    },
+    {
+      "tag": "desktop",
+      "patterns": [
+        "Do you sell desktop computers?",
+      
+        "What are the specifications of your desktops?",
+        "Tell me about your workstation desktops"
+ 
+      ],
+      "responses": [
+        "Yes, we have a range of desktop computers, including customizable options.",
+        "Our desktops include all-in-one PCs and powerful workstation models."
+      ]
+    },
+    {
+      "tag": "accessories",
+      "patterns": [
+        "What accessories do you offer?",
+        "Looking for computer accessories",
+        "Need accessories for my laptop",
+        "Do you sell external hard drives?",
+        "I'm interested in computer peripherals",
+        "Tell me about your keyboard options",
+        "What monitors do you have?",
+        "Can you recommend a good mouse?",
+        "Tell me about your external storage options",
+        "accessories"
+      ],
+      "responses": [
+        "We have various computer accessories, including external hard drives, keyboards, and monitors.",
+        "Explore our range of peripherals and accessories for laptops and desktops."
+      ]
+    },
+    {
+      "tag": "tech_support",
+      "patterns": [
+        "Facing issues with my laptop",
+        "Can you help fix my computer?",
+        "Need technical support",
+        "My desktop is not working",
+        "How do I contact technical support?",
+        "Tell me about your warranty and support services",
+        "What is covered under technical support?",
+        "Do you provide on-site support?",
+        "Can I schedule a repair for my computer?",
+        "How long does technical support take?",
+        "technical support"
+      ],
+      "responses": [
+        "Our technical support team can assist you. Please describe the issue you're facing. Contact No:0774244343"     
+      ]
+    }
+    ,
+    {
+      "tag": "software",
+      "patterns": [
+        "Do you provide software solutions?",
+        "Software options available?",
+        "Looking for operating systems",
+        "Any antivirus software?",
+        "software"
+      ],
+      "responses": [
+        "We offer various software solutions, including operating systems and antivirus software.",
+        "Explore our software collection, including options for operating systems and security software."
+      ]
+    },
+    {
+      "tag": "payment_options",
+      "patterns": [
+        "What payment methods do you accept?",
+        "Payment options available?",
+        "Do you accept credit cards?",
+        "Can I pay online?",
+        "payment"
+      ],
+      "responses": [
+        "We accept multiple payment methods, including credit/debit cards and online payments.",
+        "You can pay using credit cards, debit cards, or via our secure online payment gateway."
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How do you handle deliveries?",
+        "Delivery options for purchases?",
+        "Do you offer home delivery?",
+        "Is shipping available?",
+        "delivery"
+      ],
+      "responses": [
+        "We provide home delivery services for purchases. Shipping options are also available.",
+        "Our delivery service ensures your products reach you safely. We offer both home delivery and shipping."
+      ]
+    },
+    {
+      "tag": "store_hours",
+      "patterns": [
+        "What are your store hours?",
+        "When are you open?",
+        "Operating hours?",
+        "What time do you close?"
+      ],
+      "responses": [
+        "Our store is open from 8 am to 9 pm. We look forward to assisting you during our business hours.",
+        "Our store hours are 8a.m. to 8p.m., Feel free to visit us during our operating hours."
+      ]
+    },
+    {
+      "tag": "laptop_models",
+      "patterns": [
+        "Can you tell me about Dell laptops?",
+        "Show me Dell laptop options",
+        "Looking for Dell laptops",
+        "Dell laptop",
+        "Dell"
+      ],
+      "responses": [
+        "Certainly! Dell offers various laptop models like the Inspiron, XPS, and Latitude series. Each series is designed for different needs and specifications."
+      ]
+    },
+    {
+      "tag": "desktop_models",
+      "patterns": [
+        "What desktops does HP offer?",
+        "Show me HP desktop options",
+        "Looking for HP desktop computers",
+        "Hp models"
+      ],
+      "responses": [
+        "HP provides desktop models such as the HP Pavilion, HP Envy, and HP EliteDesk series. These models cater to different user requirements and preferences."
+      ]
+    },
+    {
+      "tag": "specific_laptop",
+      "patterns": [
+        "Tell me about the Dell XPS 15",
+        "What are the specifications of the Dell XPS 15?",
+        "Information on Dell XPS 15",
+        "Dell XPS"
+      ],
+      "responses": [
+        "The Dell XPS 15 is a high-performance laptop known for its powerful processors, stunning display, and sleek design. It's suitable for both productivity and entertainment purposes."
+      ]
+    },
+    {
+      "tag": "specific_desktop",
+      "patterns": [
+        "Can you provide details about the HP Pavilion desktop?",
+        "I'm interested in the HP Pavilion desktop specifications",
+        "Information on HP Pavilion desktop",
+        "HP Pavilion desktop",
+        "Hp pavilion"
+      ],
+      "responses": [
+        "The HP Pavilion desktop offers a blend of performance and style. With customizable configurations and reliable performance, it's suitable for various computing needs."
+      ]
+    },
+    {
+      "tag": "laptop_prices",
+      "patterns": [
+        "What is the price range for Dell laptops?",
+        "Dell laptop price",
+        "Show me Dell laptop prices",
+        "Looking for Dell laptop pricing"
+      ],
+      "responses": [
+        "The prices for Dell laptops vary depending on the model and specifications. They typically range from $500 to $3000.",
+        "Our Dell laptop prices typically range from $500 to $2500, depending on the model and specifications."
+      ]
+    },
+    {
+      "tag": "desktop_prices",
+      "patterns": [
+        "Can you provide pricing details for HP desktops?",
+        "I'm interested in HP desktop prices",
+        "Hp desktop price",
+        "Show me HP desktop pricing"
+      ],
+      "responses": [
+        "HP desktop prices vary based on the model and configuration. The price range for HP desktops is usually between $200 and $3000.",
+        "The prices for our HP desktops generally range from $600 to $3000, varying based on the selected configurations."
+      ]
+    },
+    {
+      "tag": "specific_laptop_price",
+      "patterns": [
+        "What is the price of the Dell XPS 15?",
+        "Tell me the cost of the Dell XPS 15",
+        "Dell XPS price",
+        "How much does the Dell XPS 15 cost?"
+      ],
+      "responses": [
+        "The price of the Dell XPS 15 starts at $600, but it may vary based on the configuration and additional features."
+      ]
+    },
+    {
+      "tag": "specific_desktop_price",
+      "patterns": [
+        "Can you provide the price for the HP Pavilion desktop?",
+        "Hp",
+
+        "Hp pavilion",
+        "What is the cost of the HP Pavilion desktop?",
+        "How much does the HP Pavilion desktop cost?"
+      ],
+      "responses": [
+        "The HP Pavilion desktop is priced at $800, but the final cost may vary depending on the chosen specifications and any additional components."
+      ]
     },
     {
       "tag": "payments",
@@ -61,21 +635,32 @@
         "Shipping takes 2-4 days"
       ]
     },
+    
     {
-      "tag": "funny",
+      "tag": "product_info",
+      "patterns": ["Can you tell me about laptops?", "What computers do you offer?", "I need information on desktops","I want to by a desktop","I want to by a computer"],
+      "responses": ["Sure! We have a range of laptops and desktops. What specific information are you looking for?"]
+    },
+
+    {
+      "tag": "purchase",
+      "patterns": ["How can I buy a laptop?", "I want to purchase a computer", "Can I place an order online?"],
+      "responses": ["Certainly! You can place an order through our website or visit our store. How can I assist you further with your purchase?"]
+    }
+    ,{
+      "tag": "Buy Laptop",
       "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "How can I buy a laptop?",
+        "I want to purchase a laptop",
+        "Looking to buy a laptop",
+        "How do I get a new laptop?"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "Certainly! You can place an order through our website or visit our store. How can I assist you further with your purchase?",
+        "We offer online ordering or in-store purchases for laptops. What specific laptop are you interested in?",
+        "Buying a laptop is easy! You can make a purchase on our website or come to our store. How can I help you choose?"
       ]
-
-
-
-      
     }
+    
   ]
 }
