@@ -33,7 +33,7 @@ This repository contains the code for a chatbot designed specifically for a comp
 
 ## Setup and Installation
 
-1. Clone the repository: `git clone (https://github.com/bannukadananjaya/Chatbot.git)`
+1. Clone the repository: `git clone https://github.com/bannukadananjaya/Chatbot.git`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Start the Flask server: `python app.py`
 
@@ -57,7 +57,3 @@ Contributions are welcome! Fork the repository and create a pull request with yo
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-Feel free to modify this README to fit your project's specific details and structure. It should give users an understanding of what your project does, how to set it up, and how to use it.
